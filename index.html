@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plant Doctor - Disease Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌱 Plant Doctor</h1>
+        <p>Plant Disease Detection System</p>
+    </header>
+
+    <main class="container">
+
+        <h2>Check Your Plant Health</h2>
+
+        <p>Upload your plant leaf photo below.</p>
+
+        <form id="uploadForm">
+
+            <input
+                type="file"
+                id="plantImage"
+                accept="image/jpeg,image/png,image/webp"
+                required
+            >
+
+            <img id="preview" alt="Plant Preview">
+
+            <button type="submit">
+                Detect Plant Disease
+            </button>
+
+        </form>
+
+        <p id="loading"></p>
+
+        <section id="result">
+
+            <h2>Detection Result</h2>
+
+            <h3 id="disease"></h3>
+
+            <h4>Symptoms</h4>
+            <ul id="symptoms"></ul>
+
+            <h4>Treatment</h4>
+            <ul id="treatment"></ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Plant Doctor | Educational Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
